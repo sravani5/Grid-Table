@@ -1,0 +1,55 @@
+<mvc:View controllerName="gtab.ZGridTable.controller.Worklist" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic"
+	xmlns="sap.ui.table" xmlns:core="sap.ui.core" xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<m:Page>
+		<m:content>
+			<Table id="table" rows="{/ProductSet}">
+				<columns>
+					<Column width="10rem" sortProperty="ProductID" autoResizable="true" filterProperty="ProductID" showSortMenuEntry="true">
+						<customData>
+							<core:CustomData key="p13nData" value='\{"columnKey": "ProductID","leadingProperty": "ProductID"}'/>
+						</customData>
+						<!--<m:label>-->
+							<m:Text text="ProductID"/>
+						<!--</m:label>-->
+						<template>
+							<m:Text width="100%" text="{ProductID}"/>
+						</template>
+					</Column>
+						<Column width="10rem" sortProperty="Category" autoResizable="true" filterProperty="Category" showSortMenuEntry="true">
+						<customData>
+							<core:CustomData key="p13nData" value='\{"columnKey": "Category","leadingProperty": "Category"}'/>
+						</customData>
+						<!--<m:label>-->
+							<m:Text text="Category"/>
+						<!--</m:label>-->
+						<template>
+							<m:Text width="100%" text="{Category}"/>
+						</template>
+					</Column>
+						<Column width="10rem" sortProperty="TypeCode" autoResizable="true" filterProperty="TypeCode" showSortMenuEntry="true">
+						<customData>
+							<core:CustomData key="p13nData" value='\{"columnKey": "TypeCode","leadingProperty": "TypeCode"}'/>
+						</customData>
+						<!--<m:label>-->
+							<m:Text text="TypeCode"/>
+						<!--</m:label>-->
+						<template>
+							<m:Text width="100%" text="{TypeCode}"/>
+						</template>
+					</Column>
+						<Column width="10rem" sortProperty="Name" autoResizable="true" filterProperty="Name" showSortMenuEntry="true">
+						<customData>
+							<core:CustomData key="p13nData" value='\{"columnKey": "Name","leadingProperty": "Name"}'/>
+						</customData>
+						<!--<m:label>-->
+							<m:Text text="Name"/>
+						<!--</m:label>-->
+						<template>
+							<m:Text width="100%" text="{Name}"/>
+						</template>
+					</Column>
+				</columns>
+			</Table>
+		</m:content>
+	</m:Page>
+</mvc:View>
